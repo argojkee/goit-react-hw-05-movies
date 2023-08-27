@@ -8,8 +8,8 @@ export const StyledNavLink = styled(NavLink)`
       0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
   }
   text-decoration: none;
-  color: black;
-  &.active {
+  color: ${props => (props.active === 'true' ? 'tomato' : 'black')};
+  /* &.active {
     color: tomato;
-  }
+  } */
 `;
