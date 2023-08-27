@@ -7,11 +7,6 @@ const Header = () => {
   const [current, setCurrent] = useState('home');
   const location = useLocation();
 
-  console.log('home ->', current === 'home' ? true : false);
-  console.log('movies -> ', current === 'movies' ? true : false);
-  console.log('current -> ', current);
-  console.log('local path ->', location.pathname);
-
   useEffect(() => {
     if (location.pathname.includes('/movies')) {
       setCurrent('movies');
