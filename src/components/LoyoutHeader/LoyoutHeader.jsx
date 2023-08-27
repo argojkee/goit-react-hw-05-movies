@@ -5,7 +5,7 @@ import { Suspense } from 'react';
 
 const Loyout = () => {
   return (
-    <Suspense>
+    <Suspense fallback={<h1>Loading...</h1>}>
       <Container className="container">
         <Header />
         <Outlet />
